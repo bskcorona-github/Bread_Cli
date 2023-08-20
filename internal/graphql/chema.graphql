@@ -1,0 +1,9 @@
+type Query {
+  entry(id: ID!): Bread
+}
+
+type Bread {
+  id: ID!
+  name: String
+  createdAt: String
+}
