@@ -1,29 +1,36 @@
 # Bread_Cli
 
-先に
-https://github.com/bskcorona-github/pan
-こちらのREADMEに記述している事を終わらせておく必要がある。
+このリポジトリは、Breadプロジェクトと対話するためのコマンドラインインターフェース（CLI）です。続行する前に、[panリポジトリのREADME](https://github.com/bskcorona-github/pan)で説明されているセットアップを完了させてください。
 
-1.go run main.goをターミナルで叩く
-2.ブラウザでhttp://localhost:8080/graphqlにアクセス
-3.一覧取得したい場合、
-{
-  entries {
-    id
-    name
-    createdAt
-  }
-}
+## 使用方法
 
-を入力して「▶」ボタンを押下
+1. ターミナルで次のコマンドを実行してください：
+   ```
+   go run main.go
+   ```
 
-4.個別取得したい場合
-{
-  entry(id: "取得したいパンのIDを入力") {
-    id
-    name
-    createdAt
-  }
-}
+2. ウェブブラウザを開き、[http://localhost:8080/graphql](http://localhost:8080/graphql)にアクセスしてください。
 
-を入力して「▶」ボタンを押下
+3. エントリのリストを取得するには、次のGraphQLクエリを入力し、「▶」ボタンをクリックしてください：
+   ```graphql
+   {
+     entries {
+       id
+       name
+       createdAt
+     }
+   }
+   ```
+
+4. 個々のエントリを取得するには、次のGraphQLクエリを入力し、対象のパンのIDを入力してから「▶」ボタンをクリックしてください：
+   ```graphql
+   {
+     entry(id: "ここに取得したいパンのIDを入力") {
+       id
+       name
+       createdAt
+     }
+   }
+   ```
+
+必ず、「ここに取得したいパンのIDを入力」を実際のパンのIDに置き換えてください。
