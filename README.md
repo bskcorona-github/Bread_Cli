@@ -11,7 +11,7 @@
 	 	DB:      db,
 		GraphQL: graphql.NewServer(db),
 	 }
- }
+     }
 
     ```
 
