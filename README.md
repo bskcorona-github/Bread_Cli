@@ -3,7 +3,7 @@
 このリポジトリは、Breadプロジェクトと対話するためのコマンドラインインターフェース（CLI）です。続行する前に、[panリポジトリのREADME](https://github.com/bskcorona-github/pan)で説明されているセットアップを完了させてください。
 
 ## 使用方法
-1.  以下のコード行で、PostgreSQL データベースへの接続情報を設定します。これを、ご自身の PostgreSQL の接続情報に合わせて変更してください。
+ 1.  以下のコード行で、PostgreSQL データベースへの接続情報を設定します。これを、ご自身の PostgreSQL の接続情報に合わせて変更してください。
    ```go
    func NewApp() *App {
 	db := database.NewDB("user=postgres dbname=postgres sslmode=disable password=tkz2001r")
