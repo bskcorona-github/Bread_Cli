@@ -4,8 +4,8 @@
 
 ## 使用方法
 1.  以下のコード行で、PostgreSQL データベースへの接続情報を設定します。これを、ご自身の PostgreSQL の接続情報に合わせて変更してください。
-   ```
-    connStr := "user=postgres dbname=postgres sslmode=disable password=tkz2001r"
+   ```go
+   connStr := "user=postgres dbname=postgres sslmode=disable password=tkz2001r"
    ```
 
 2. ターミナルで次のコマンドを実行してください：
