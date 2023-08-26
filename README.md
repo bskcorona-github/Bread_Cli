@@ -4,16 +4,9 @@
 
 ## 使用方法
 1.  以下のコード行で、PostgreSQL データベースへの接続情報を設定します。これを、ご自身の PostgreSQL の接続情報に合わせて変更してください。
-    ```go
-    func NewApp() *App {
-	 db := database.NewDB("user=postgres dbname=postgres sslmode=disable password=tkz2001r")
-	 return &App{
-	 	DB:      db,
-		GraphQL: graphql.NewServer(db),
-	 }
-     }
-
-    ```
+   ```go
+   connStr := "user=postgres dbname=postgres sslmode=disable password=tkz2001r"
+   ```
 
 2. ターミナルで次のコマンドを実行してください：
    ```
